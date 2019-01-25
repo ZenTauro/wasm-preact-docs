@@ -1,0 +1,24 @@
+* WebAssembly Modules
+  Wasm is distributed into modules, at runtime
+  can be evaluated to produce an instance.
+** Sections
+*** Imports
+    - Function imports
+    - Global imports
+    - Linear memory imports
+    - Table imports
+*** Exports
+    Each one has 3 fields
+    - Name: UTF-8
+    - Type: Same as import types
+    - Index: An index to address
+*** Start Function
+    Called after instatiation but before any
+    other function it defines can be called.
+*** Global Section
+    Internal definition of global variables,
+    need to contain:
+    - Type
+    - Mutability
+    - Initializer
+*** Linear Memory Section

@@ -1,4 +1,5 @@
 * Preact Wasm
-  Es un port de [[https://preactjs.com/][PreactJs]] escrito en [[https://www.rust-lang.org/][Rust]]. La intención de este proyecto
-  es proporcionar una alternativa en [[https://webassembly.org/][WebAssembly]] que funcione con proyectos
-  existentes que estén en javascript.
+  It is a port of [[https://preactjs.com/][PreactJs]] written in [[https://www.rust-lang.org/][Rust]]. The intention
+  of this project is to provide a compatible alternative to
+  React in [[https://webassembly.org/][WebAssembly]] that woks with existing projects
+  written in javascript/typescript.

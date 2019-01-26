@@ -3,3 +3,25 @@
   of this project is to provide a compatible alternative to
   React in [[https://webassembly.org/][WebAssembly]] that woks with existing projects
   written in javascript/typescript.
+
+* Contributing
+  This project will use [[https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow][gitflow]], to make it easier you can
+  install the [[https://github.com/petervanderdoes/gitflow-avh/wiki/Installation][tools]].
+
+  Required software:
+  - [[https://rustup.rs/][Rustup]]
+  - [[https://www.npmjs.com/][npm]]
+  - [[https://git-scm.com/][git]]
+
+  While it is not strictly necessary, it is *highly* recommended
+  to have an UNIX like OS such as Linux or (sight) OSX and an editor
+  that supports [[https://github.com/rust-lang/rls][Rust Language Server]] (RLS) such as emacs, vscode,
+  atom, etc.
+
+  To start, you will need to install the wasm target and the
+  wasm-bindgen tool.
+
+  #+BEGIN_SRC sh
+  rustup target add wasm32-unknown-unknown --toolchain nightly
+  cargo +nightly install wasm-bindgen-cli
+  #+END_SRC

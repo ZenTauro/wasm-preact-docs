@@ -87,3 +87,7 @@
     is a contiguous range of memory spanning from
     index 0 to some size. The size is a multiple
     of 64KiB (wasm page size).
+** Further Info
+   - [[https://developer.mozilla.org/en-US/docs/WebAssembly][MDN Wasm docs]] - This are really good docs
+   - [[https://webassembly.org/docs/high-level-goals/][WebAssembly Docs]]
+   - [[https://research.mozilla.org/webassembly/][Mozilla Research on wasm]]

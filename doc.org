@@ -53,12 +53,16 @@
    - [[https://developer.mozilla.org/en-US/docs/Web/API/Document][Mozilla's Document API docs]]
    - [[https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html][w3 DOM spec]]
 
-   This part is an adaptation of [[https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Using_the_W3C_DOM_Level_1_Core][Mozilla's intro]] to the DOM Level 1 Core.
+   This part is an adaptation of [[https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Using_the_W3C_DOM_Level_1_Core][Mozilla's intro]]
+   to the DOM Level 1 Core.
 
 * WebAssembly Modules
-  Wasm is distributed into modules, at runtime
-  can be evaluated to produce an instance.
+  Wasm is distributed into modules which can be evaluated
+  at runtime to produce an instance. The instance will be
+  useful to use all the exports it provides.
+
 ** Sections
+   There are many sections, here are the most important:
 *** Imports
     - Function imports
     - Global imports
@@ -79,3 +83,7 @@
     - Mutability
     - Initializer
 *** Linear Memory Section
+    Internal definition of linear memory, which
+    is a contiguous range of memory spanning from
+    index 0 to some size. The size is a multiple
+    of 64KiB (wasm page size).

@@ -2,7 +2,7 @@
   The "Document Object Model" (DOM) is an API as well
   as a representation of the contents of a webpage.
 
-  The entire page is represented in a content tree
+  The entire page is represented in a content tree:
 
   #+BEGIN_SRC html
     <html>
@@ -19,6 +19,41 @@
   #+CAPTION: Tree representation
   #+NAME: fig:DOM-tree
   [[./images/DOM_tree.jpg]]
+
+** Manipulating the DOM
+   The browser exposes the DOM API to dynamically
+   modify the document
+   #+BEGIN_SRC js
+     function modify() {
+         // The `getElementByTagName(tagname)` method returns a
+         // NodeList of all the `h1` tags. With `.item(0)` we
+         // select the first one
+         var header = document.getElemenByTagName('h1').item(0);
+         // Since the first child of the h1 is a text node, we
+         // can change it with something different
+         heade.firstChild.data = 'New content';
+
+         // Here we create a text node
+         var someText = document.createTextNode('Here comes dat boii');
+         // And now another paragraph (p) element
+         var newPara  = document.createElement('p');
+         // We add the text inside the paragraph element
+         newPara.appendChild(someText);
+         // Then we append the paragraph to the document itself.
+         // Since we want to add it alongside the other paragraph
+         // we append it to the parent element of the header, which
+         // is a sibling of the p tag.
+         header.parentNode.appendChild(newPara);
+     }
+   #+END_SRC
+
+** Further Info
+   - [[https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction][Mozilla's DOM intro]]
+   - [[https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model][Mozilla's DOM docs]]
+   - [[https://developer.mozilla.org/en-US/docs/Web/API/Document][Mozilla's Document API docs]]
+   - [[https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html][w3 DOM spec]]
+
+   This part is an adaptation of [[https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Using_the_W3C_DOM_Level_1_Core][Mozilla's intro]] to the DOM Level 1 Core.
 
 * WebAssembly Modules
   Wasm is distributed into modules, at runtime

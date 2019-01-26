@@ -1,0 +1,40 @@
+#+TITLE: Preact Wasm
+#+OPTIONS: toc:nil
+
+#+SETUPFILE: org-html-themes/setup/theme-readtheorg-local.setup
+
+* Intro
+  El proyecto consistiría en formar un grupo para programar un
+  port de preact (una librería web compatible con react.js) en
+  Rust, utilizando la tecnología de vanguardia para la web llamada
+  WebAssembly (wasm).
+
+  El principal objetivo es aprender y desarrollar un producto
+  en condiciones similares a las de un entorno laboral.
+* Requisitos previos
+  Tener cierta noción sobre conceptos de programación (como
+  variables, funciones, etc.) y ganas de aprender más.
+
+* Definiciones
+** Rust
+   Es un lenguaje de programación que se centra en seguridad y
+   velocidad (que corra mas rápido el programa).
+
+   Rust fuertemente tipado es decir, todas las variables
+   y funciones deben de ir acompañados de un tipo de dato, (int, String, etc).
+
+   Tiene un sistema de manejo de memoria, en el cual la memoria
+   dinámica (malloc, calloc, free, etc.) funciona mediante
+   comprobaciones que hace el compilador (En concreto, usa RAII extensivamente).
+** Wasm
+   Wasm es un "estándar" web que permite escribir programas para
+   la web en otros idiomas distintos a JavaScript.
+** React
+   Es una librería web que permite la creación de paginas web
+   dinámicas de forma efectiva y sencilla.
+
+* Notas
+  - El proyecto se publicará bajo una licencia de software libre.
+  - [[https://developer.mozilla.org/en-US/docs/WebAssembly][Sobre Wasm]]
+  - [[https://www.rust-lang.org/learn][Sobre Rust]]
+  - [[https://preactjs.com/][Sobre Preact]]

@@ -1,3 +1,25 @@
+* DOM
+  The "Document Object Model" (DOM) is an API as well
+  as a representation of the contents of a webpage.
+
+  The entire page is represented in a content tree
+
+  #+BEGIN_SRC html
+    <html>
+    <head>
+      <title>My Document</title>
+    </head>
+    <body>
+      <h1>Header</h1>
+      <p>Paragraph</p>
+    </body>
+    </html>
+  #+END_SRC
+
+  #+CAPTION: Tree representation
+  #+NAME: fig:DOM-tree
+  [[./images/DOM_tree.jpg]]
+
 * WebAssembly Modules
   Wasm is distributed into modules, at runtime
   can be evaluated to produce an instance.

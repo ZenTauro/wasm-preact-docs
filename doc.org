@@ -56,6 +56,40 @@
    This part is an adaptation of [[https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Using_the_W3C_DOM_Level_1_Core][Mozilla's intro]]
    to the DOM Level 1 Core.
 
+* React
+  React is "A JavaScript library for building
+  user interfaces" (official definition). It is
+  composed of a runtime with its libraries and
+  JSX (an XML-like syntax used to write
+  components).
+** The Virtual DOM
+   The virtual DOM (VDOM) is a "virtual"
+   representation of the real DOM, where the
+   actual actual UI is in memory and then synced
+   to the DOM. This process of syncing is called
+   reconciliation.
+
+   React associates React Elements and additional
+   internal objects (called fibers) to the UI,
+   with every state change, it diffs the internal
+   versions and updates the UI according to a
+   heuristic algorithm.
+
+** Design principles
+   React is based on a pull approach, where
+   computations can be delayed and batched to be
+   performed when necessary, rather than
+   processed when the data arrives.
+
+   Key points:
+   - In a UI, applying the changes with every
+     update is not necessary.
+   - There are different priorities, e.g. an
+     animation needs to prioritized over an update
+     from a data store
+   - On a pull based approach, the framework
+     schedules the updates.
+
 * WebAssembly Modules
   Wasm is distributed into modules which can be evaluated
   at runtime to produce an instance. The instance will be
